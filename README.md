@@ -61,6 +61,6 @@ The goal is to identify key factors that contribute to customer churn and provid
 ---
 
 ## 📂 Project Structure
--- ├── eda.ipynb # Jupyter Notebook with full analysis
--- ├── Customer Churn.csv # Dataset
--- └── README.md # Documentation
+- ├── eda.ipynb # Jupyter Notebook with full analysis
+- ├── Customer Churn.csv # Dataset
+- └── README.md # Documentation
