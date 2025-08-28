@@ -1,73 +1,66 @@
-📊 Customer Churn Analysis (EDA)
-📌 Overview
+# 📊 Customer Churn Exploratory Data Analysis (EDA)
 
-This project explores the Telco Customer Churn dataset to understand the factors that contribute to customer churn (whether customers leave the company). The analysis includes data preprocessing, visualization, and extraction of business insights.
+## 📌 Overview
+This project analyzes customer churn patterns using the **Telco Customer Churn dataset**.  
+The goal is to identify key factors that contribute to customer churn and provide actionable insights for reducing churn rates.
 
-🗂 Dataset
+---
 
-Source: Customer Churn.csv
+## 🗂 Dataset
+- **File:** `Customer Churn.csv`  
+- **Target Variable:** `Churn` (Yes = customer left, No = customer stayed)  
+- **Features:**  
+  - Demographics (Gender, Senior Citizen, etc.)  
+  - Account info (Tenure, Contract, Payment Method, etc.)  
+  - Services subscribed (Internet, Online Security, Tech Support, Streaming, etc.)  
 
-Target Variable: Churn (Yes/No)
+---
 
-🔑 Key Steps
+## 🔑 Steps Performed
+1. **Data Preprocessing**
+   - Checked datatypes, missing values, duplicates.  
+   - Converted `SeniorCitizen` (0/1 → Yes/No).  
 
-Data Loading & Cleaning
+2. **Exploratory Data Analysis**
+   - Distribution of churn vs. non-churned customers.  
+   - Demographic impact (Gender, Senior Citizen).  
+   - Tenure & contract type analysis.  
+   - Effect of subscribed services (security, tech support, streaming).  
+   - Payment method patterns.  
 
-Checked missing values, data types, and applied preprocessing.
+3. **Visualization**
+   - Count plots & histograms.  
+   - Stacked bar charts for churn percentages.  
+   - Pie chart for churn distribution.  
+   - Multi-subplot service analysis.  
 
-Converted categorical variables where needed (e.g., SeniorCitizen → Yes/No).
+---
 
-Exploratory Data Analysis
+## 📈 Key Insights
+- **Churn Rate:** ~26–27% of customers left the service.  
+- **Demographics:** Gender has little effect, but **Senior Citizens churn more**.  
+- **Tenure:** **New customers** (low tenure) are far more likely to churn.  
+- **Contracts:** **Month-to-month contracts** have the highest churn, while 1–2 year contracts have much lower churn.  
+- **Services:** Customers **without Online Security, Backup, or Tech Support** are more likely to churn. Fiber optic users churn more than DSL users.  
+- **Payment Method:** **Electronic check users churn the most**, while automatic payment users churn less.  
 
-Distribution of churned vs. non-churned customers.
+---
 
-Demographic impact (Gender, Senior Citizen).
+## 🎯 Business Recommendations
+- Offer **retention discounts** for month-to-month and senior citizen customers.  
+- Encourage **long-term contracts** with special offers.  
+- Upsell **security & support services** to high-risk customers.  
+- Promote **automatic payments** instead of electronic checks to improve retention.  
 
-Service subscriptions (Phone, Internet, OnlineSecurity, TechSupport, etc.).
+---
 
-Contract type and tenure.
+## ⚙️ Tech Stack
+- **Language:** Python  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn  
 
-Payment method patterns.
+---
 
-Visualization
-
-Count plots, histograms, pie charts.
-
-Stacked bar charts for churn percentages.
-
-Multi-subplot comparison across services.
-
-📈 Findings & Insights
-
-Overall Churn Rate: ~26–27% of customers left.
-
-Demographics: Gender has little effect, but senior citizens churn more.
-
-Tenure: New customers (short tenure) are more likely to churn.
-
-Contracts: Month-to-month contracts have the highest churn; long-term contracts are safer.
-
-Services: Lack of online security/backup/tech support increases churn risk. Fiber optic users churn more than DSL.
-
-Payment Method: Electronic check users churn the most; auto-pay customers churn less.
-
-🎯 Business Recommendations
-
-Provide retention offers for month-to-month and senior citizen customers.
-
-Promote long-term contracts with discounts.
-
-Upsell support and security services to reduce churn.
-
-Encourage automatic payments instead of electronic checks.
-
-⚙️ Tech Stack
-
-Python
-
-Libraries: Pandas, NumPy, Matplotlib, Seaborn
-
-📂 Project Structure
-├── eda.ipynb         # Main notebook with analysis
-├── Customer Churn.csv # Dataset
-└── README.md         # Project documentation
+## 📂 Project Structure
+-- ├── eda.ipynb # Jupyter Notebook with full analysis
+-- ├── Customer Churn.csv # Dataset
+-- └── README.md # Documentation
